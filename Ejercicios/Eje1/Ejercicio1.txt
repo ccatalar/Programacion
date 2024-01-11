@@ -1,0 +1,31 @@
+/*
+Crear un programa que nos pida un user, y una pass, este se tiene que comprobarse con un boolean
+si user = usuario1 y pass = asdasd es true, sino es fale, estas solo se pueden probar 3 veces, 
+se deben poder las veces de intentos. Repetir con una funcion.
+ */
+
+	main{
+
+        String user, pass;
+        int intentos = 0;
+        boolean loguin = false;
+
+        for (int i = 0; i < 3 && loguin == true; i++) {
+
+            print("Indica el usuario: ");
+            user = input();
+
+            print("Introduce la contraseña: ");
+            pass = input();
+            i = intentos;
+			
+            (user.equals("usuario1") && pass.equals("asdfg")) ? loguin == true : intentos++;
+            if (loguin = true) {
+                println("Acceso permitido, el numero de intentos a sido " +intentos);
+            } 
+			else {
+                println("Acceso denegado, el numero de intentos a sido " +intentos);
+            }
+        }
+    }
+}
